@@ -1,12 +1,10 @@
 
-
 export const About = () => {
 
     const editingSoftware = ["PhotoShop", "Adobe Lightroom", "CapCut", "DaVinci Software"]
     const Gear = ["Canon Rebel T3I", "DJI Osmo Pocket 3", "CPL Filter"]
     return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20">
-
  
     <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center ">
@@ -14,8 +12,7 @@ export const About = () => {
         </h2>
         <div className="text-center justify-center glass rounded-xl p-8 border-white/10 border hover:translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-            A passionate automotive enthusiast with knowledge of automotive mechanics and aesthetics and sharing them with the 
-            automotive community
+                I'm a passionate automotive enthusiast with a strong understanding of both mechanical systems and visual design. I enjoy sharing my knowledge and experiences with the automotive community.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -51,37 +48,37 @@ export const About = () => {
         </div>
             <div className="grid grid-cols-1 grid-cols-2 gap-6 mt-8">
                 <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                    <h3 className="text-lg text-whitetext-center justitfy-center text-xl font-bold mb-4">Education</h3>
+                    <h3 className="text-xl text-white text-center font-bold mb-4">Education</h3>
                     <ul className="list-disc list-inside text-gray-300 space-y-2">
-                        <li >
-                            Enrolled in Rutgers University Pursuing a B.S. in Computer Science
+                        <li>
+                            Currently pursuing a B.S. in Computer Science at Rutgers University
                         </li>
                         <li>
-                            I am currently participating in the Rutgers University Car Club and I discuss with my peers about different events and drives around the area
+                            Active member of the Rutgers University Car Club, where I engage with peers about events, drives, and automotive trends
                         </li>
                         <li>
-                            Graduated with a High School Diploma from South Brunswick High School
+                            Graduated from South Brunswick High School with a High School Diploma
                         </li>
                         <li>
-                            Did a course related to auto mechanics
+                            Completed a course in automotive mechanics
                         </li>
                     </ul>
                 </div>
                 <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                    <h3 className="text-lg text-white text-center justify-center text-xl font-bold mb-4"> Work Experience </h3>
+                    <h3 className="text-xl text-white text-center font-bold mb-4">Work Experience</h3>
                     <div className="space-y-4 text-gray-300">
                         <div>
-                        <h4 className="font-bold text-lg text-white mt-4 mb-1">
-                            Auto Mechanic Intern At My Local Mechanic Shop
+                            <h4 className="font-bold text-lg text-white mt-4 mb-1">
+                                Auto Mechanic Intern – Local Repair Shop
                             </h4>
-                        <       p className="text-gray-300">
-                                Performed oil changes, replaced flat tires, worked with peers on big projects...
-                                </p>
+                            <p className="text-gray-300">
+                                Performed oil changes, repaired flat tires, and collaborated with peers on larger repair projects.
+                            </p>
                             <h4 className="font-bold text-lg text-white mt-4 mb-1">
                                 Freelance Photographer
                             </h4>
                             <p>
-                                Went to car meets and created connections with people around me, took photos of their cars, and also did photoshoots for clients
+                                Attended car meets to build connections and photograph unique builds. Also conducted professional photoshoots for clients and their vehicles.
                             </p>
                         </div>
                     </div>
