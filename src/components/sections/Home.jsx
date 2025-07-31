@@ -8,9 +8,9 @@ export const Home = () => {
           Hi, my name is Arav Agarwal
         </h1>
         <p className="text-lg mb-8 max-w-lg mx-auto">
-          I am a part-time automotive photographer who loves cars, be it working on them to creating photos of them. 
-          This website contains my photos that I have taken over my career and my ultimate goal is to acquire my dream car garage
-          and become more involved within the automotive community!
+        I am a part-time automotive photographer with a strong passion for both working on cars and capturing 
+        their design through photography. This website serves as a showcase of my work over the course of my career, 
+        with the long-term goal of curating my dream car collection and further engaging with the automotive community.
         </p>
         <div className="flex justify-center space-x-4">
           <Link
