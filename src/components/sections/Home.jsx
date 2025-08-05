@@ -1,6 +1,20 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export const Home = () => {
+  const [pageViews, setPageViews] = useState(null);
+
+  useEffect(() => {
+    fetch('/api/counter')
+      .then(res => res.json())
+      .then(data => {
+        setPageViews(data.count);
+      })
+      .catch(err => {
+        console.error('Failed to fetch page views:', err);
+      });
+  }, []);
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative">
       <div className="text-center z-10 px-4">
@@ -8,10 +22,15 @@ export const Home = () => {
           Hi, my name is Arav Agarwal
         </h1>
         <p className="text-lg mb-8 max-w-lg mx-auto">
-        I am a part-time automotive photographer with a strong passion for both working on cars and capturing 
-        their design through photography. This website serves as a showcase of my work over the course of my career, 
-        with the long-term goal of curating my dream car collection and further engaging with the automotive community.
+          I am a part-time automotive photographer with a strong passion for both working on cars and capturing 
+          their design through photography. This website serves as a showcase of my work over the course of my career, 
+          with the long-term goal of curating my dream car collection and further engaging with the automotive community.
         </p>
+
+        {pageViews !== null && (
+          <p className="text-sm text-gray-500 mb-6">Page views: {pageViews}</p>
+        )}
+
         <div className="flex justify-center space-x-4">
           <Link
             to="/projects"
