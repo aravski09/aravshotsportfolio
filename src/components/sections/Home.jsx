@@ -5,10 +5,11 @@ export const Home = () => {
   const [pageViews, setPageViews] = useState(null);
 
   useEffect(() => {
-    fetch('/api/counter')
+    // Fetch page views from the correct API route
+    fetch('/api/views')
       .then(res => res.json())
       .then(data => {
-        setPageViews(data.count);
+        setPageViews(data.views); // Correct key from the API response
       })
       .catch(err => {
         console.error('Failed to fetch page views:', err);
@@ -27,6 +28,7 @@ export const Home = () => {
           with the long-term goal of curating my dream car collection and further engaging with the automotive community.
         </p>
 
+        {/* Page views display */}
         {pageViews !== null && (
           <p className="text-sm text-gray-500 mb-6">Page views: {pageViews}</p>
         )}
